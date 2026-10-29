@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 140" width="1000" height="140" role="img" aria-label="Key numbers: 1,470 employees, 237 left, 16.1% attrition rate, 6,503 average monthly income, 7.0 years average tenure, 89 active high-risk employees">
+  <style>
+    .f { font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif; }
+    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+    .card { animation: rise .6s cubic-bezier(.2,.8,.2,1) both; }
+    .dot { animation: pulse 1.5s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <rect width="1000" height="140" rx="18" fill="#F3F4FA"/>
+  <rect x="0.75" y="0.75" width="998.5" height="138.5" rx="17" fill="none" stroke="#DDE2F2" stroke-width="1.5"/>
+
+  <g class="card" style="animation-delay:.1s">
+    <rect x="20" y="20" width="146" height="100" rx="12" fill="#FFFFFF" stroke="#DDE2F2"/>
+    <text class="f" x="34" y="46" font-size="14" font-weight="700" fill="#64748B">Headcount</text>
+    <text class="f" x="93" y="94" font-size="32" text-anchor="middle" letter-spacing="1" fill="#1E293B">1,470</text>
+  </g>
+
+  <g class="card" style="animation-delay:.25s">
+    <rect x="182.8" y="20" width="146" height="100" rx="12" fill="#FFFFFF" stroke="#DDE2F2"/>
+    <text class="f" x="196.8" y="46" font-size="14" font-weight="700" fill="#64748B">Employees left</text>
+    <text class="f" x="255.8" y="94" font-size="32" text-anchor="middle" letter-spacing="1" fill="#1E293B">237</text>
+  </g>
+
+  <g class="card" style="animation-delay:.4s">
+    <rect x="345.6" y="20" width="146" height="100" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+    <text class="f" x="359.6" y="46" font-size="14" font-weight="700" fill="#64748B">Attrition rate</text>
+    <text class="f" x="418.6" y="94" font-size="32" text-anchor="middle" letter-spacing="1" fill="#2563EB">16.1%</text>
+  </g>
+
+  <g class="card" style="animation-delay:.55s">
+    <rect x="508.4" y="20" width="146" height="100" rx="12" fill="#FFFFFF" stroke="#DDE2F2"/>
+    <text class="f" x="522.4" y="46" font-size="14" font-weight="700" fill="#64748B">Avg monthly income</text>
+    <text class="f" x="581.4" y="94" font-size="32" text-anchor="middle" letter-spacing="1" fill="#1E293B">6,503</text>
+  </g>
+
+  <g class="card" style="animation-delay:.7s">
+    <rect x="671.2" y="20" width="146" height="100" rx="12" fill="#FFFFFF" stroke="#DDE2F2"/>
+    <text class="f" x="685.2" y="46" font-size="14" font-weight="700" fill="#64748B">Avg tenure (yrs)</text>
+    <text class="f" x="744.2" y="94" font-size="32" text-anchor="middle" letter-spacing="1" fill="#1E293B">7.0</text>
+  </g>
+
+  <g class="card" style="animation-delay:.85s">
+    <rect x="834" y="20" width="146" height="100" rx="12" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.5"/>
+    <text class="f" x="848" y="46" font-size="14" font-weight="700" fill="#64748B">Active high-risk</text>
+    <circle class="dot" cx="962" cy="40" r="4.5" fill="#EF4444"/>
+    <text class="f" x="907" y="94" font-size="32" text-anchor="middle" letter-spacing="1" fill="#EF4444">89</text>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 310" width="1000" height="310" role="img" aria-label="Attrition by job role: Sales Representative 39.8%, Laboratory Technician 23.9%, Human Resources 23.1%, Sales Executive 17.5%, Research Scientist 16.1%. Company average 16.1%.">
+  <style>
+    .f { font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif; }
+    @keyframes sweep { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    .bar { transform-box: fill-box; transform-origin: 0% 50%; animation: sweep .9s cubic-bezier(.2,.8,.2,1) both; }
+    .val { animation: fade .5s ease both; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <rect width="1000" height="310" rx="18" fill="#F3F4FA"/>
+  <rect x="0.75" y="0.75" width="998.5" height="308.5" rx="17" fill="none" stroke="#DDE2F2" stroke-width="1.5"/>
+  <rect x="20" y="16" width="960" height="278" rx="14" fill="#FFFFFF" stroke="#E2E6F3"/>
+
+  <text class="f" x="40" y="46" font-size="16" font-weight="700" fill="#64748B">Where attrition hits hardest: top 5 job roles</text>
+
+  <!-- company average line (16.1% x 14px = 225 -> x 481) -->
+  <line x1="481" y1="62" x2="481" y2="268" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text class="f" x="481" y="284" font-size="12" text-anchor="middle" fill="#EF4444">Company average 16.1%</text>
+
+  <!-- role labels -->
+  <g class="f" font-size="15" fill="#1E293B" text-anchor="end">
+    <text x="242" y="86">Sales Representative</text>
+    <text x="242" y="130">Laboratory Technician</text>
+    <text x="242" y="174">Human Resources</text>
+    <text x="242" y="218">Sales Executive</text>
+    <text x="242" y="262">Research Scientist</text>
+  </g>
+
+  <!-- bars: width = rate x 14 -->
+  <rect class="bar" style="animation-delay:.2s"  x="256" y="68"  width="557" height="26" rx="4" fill="#2563EB"/>
+  <rect class="bar" style="animation-delay:.35s" x="256" y="112" width="335" height="26" rx="4" fill="#2563EB"/>
+  <rect class="bar" style="animation-delay:.5s"  x="256" y="156" width="323" height="26" rx="4" fill="#2563EB"/>
+  <rect class="bar" style="animation-delay:.65s" x="256" y="200" width="245" height="26" rx="4" fill="#2563EB"/>
+  <rect class="bar" style="animation-delay:.8s"  x="256" y="244" width="225" height="26" rx="4" fill="#2563EB"/>
+
+  <!-- value labels -->
+  <g class="f val" font-size="14" font-weight="600" fill="#1E293B">
+    <text style="animation-delay:1.0s" x="822" y="87">39.8%</text>
+    <text style="animation-delay:1.15s" x="600" y="131">23.9%</text>
+    <text style="animation-delay:1.3s" x="588" y="175">23.1%</text>
+    <text style="animation-delay:1.45s" x="510" y="219">17.5%</text>
+    <text style="animation-delay:1.6s" x="490" y="263">16.1%</text>
+  </g>
+</svg>
